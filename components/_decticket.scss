@@ -1,0 +1,38 @@
+
+.decticket{
+	padding: 0em 1em 0em 1em;
+	text-align: center;
+	box-shadow:30px 0 50px 0px rgba(0,0,0,0.08);
+	p{
+		height: 100px;
+		margin-top: 30px;
+	}
+	div:not(.round-text){
+		min-height: 250px;
+		position: relative;
+	}
+	img{
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		// margin-top: auto;
+		// margin-bottom: auto;
+	}
+	.round-text{
+		width: 60px;
+		height: 60px;
+		font-size: 2em;
+		border-radius: 50%;
+		background-color: $color-primary;
+		color: white;
+		font-weight: bolder;
+		margin: 0 5px;
+		text-align: center;
+		line-height: 60px;
+		display: inline-block;
+		position: relative;
+		margin-top: -30px;
+	}
+}

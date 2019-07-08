@@ -1,0 +1,45 @@
+@import "teleInput";
+@import "button";
+@import "decticket";
+
+//Location Pin
+.location-pin{
+  margin-left: 10px;
+  border-radius: 50% 50% 50% 0;
+  border: 1.5px solid #fff;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+  div{
+  	transform: rotate(45deg);
+		display: inline-block;
+  }
+}
+
+//Round div
+.round-text-white{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: white;
+	color: $color_blue;
+	font-weight: bolder;
+	margin: 0 5px;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+}
+
+.round-text-blue{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: $color_blue;
+	color: white;
+	font-weight: bolder;
+	margin: 0 5px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	display: inline-block;
+}

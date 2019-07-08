@@ -1,0 +1,18 @@
+.btn{
+	background-color: $color_primary;
+	color: white;
+	border: none;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.5em 0.5em;
+  &:hover{
+  	color: #e2e2e2;
+  }
+  &.btn-blue{
+  	background-color: $color_blue;
+  	&:hover{
+  		color: #e2e2e2;
+  	}
+  }
+}

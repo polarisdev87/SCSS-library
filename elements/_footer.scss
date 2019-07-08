@@ -1,0 +1,14 @@
+.footer{
+	width: 100%;
+	// background-color: $color_primary;
+	background: -webkit-linear-gradient(left, rgb(255, 116, 0) 0%, rgb(255, 140, 0) 100%);
+	background: -o-linear-gradient(left, rgb(255, 116, 0) 0%, rgb(255, 140, 0) 100%);
+	background: -ms-linear-gradient(left, rgb(255, 116, 0) 0%, rgb(255, 140, 0) 100%);
+	background: -moz-linear-gradient(left, rgb(255, 116, 0) 0%, rgb(255, 140, 0) 100%);
+	background: linear-gradient(to right, rgb(255, 116, 0) 0%, rgb(255, 140, 0) 100%);
+	color: white;
+}
+
+.country-name{
+	color: black;
+}

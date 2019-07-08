@@ -1,0 +1,175 @@
+//display
+.inline {display: inline !important; }
+.block { display: block !important; }
+.inline-block { display: inline-block !important;}
+.flex {
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+//hidden
+.hide { display: none !important; }
+.hidden { opacity: 0; visibility: hidden; }
+
+//overflow
+.hide-overflow   { position:relative; overflow: hidden}
+.hide-overflow-x { position:relative; overflow-y: hidden}
+.hide-overflow-y { position:relative; overflow-x: hidden}
+
+//position
+.absolute { position: absolute; }
+.relative { position: relative; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
+
+//float
+.clear{ clear: both; }
+.fleft { float : left; }
+.fright { float : right; }
+
+//margin, padding
+
+$num: 15;
+@while $num > -1 {
+  .m#{$num}  { margin:             #{$num}em; }
+  .mt#{$num} { margin-top:         #{$num}em !important; }
+  .mr#{$num} { margin-right:       #{$num}em !important; }
+  .mb#{$num} { margin-bottom:      #{$num}em !important; }
+  .ml#{$num} { margin-left:        #{$num}em !important; }
+
+  .p#{$num}  { padding:            #{$num}em; }
+  .pt#{$num} { padding-top:        #{$num}em !important; }
+  .pr#{$num} { padding-right:      #{$num}em !important; }
+  .pb#{$num} { padding-bottom:     #{$num}em !important; }
+  .pl#{$num} { padding-left:       #{$num}em !important; }
+
+  $num: $num - 1;
+}
+
+.mauto {
+  margin: auto auto;
+}
+.m0a { margin: 0 auto !important; }
+.ma0 { margin: auto 0 !important; }
+
+.pauto{
+  padding: auto auto;
+}
+
+//Min, Max width and Height
+
+$num: 50;
+@while $num > 5 {
+  .wmin#{$num}  { min-width:             #{$num}em; }
+  .wmax#{$num} { max-width:         #{$num}em !important; }
+  .hmin#{$num} { min-height:       #{$num}em !important; }
+  .hmax#{$num} { max-height:      #{$num}em !important; }
+  $num: $num - 1;
+}
+
+.wp100 { width: 100%; }
+.wvw100 { width: 100vw; }
+.wauto { width: auto; }
+
+.hp100 { height: 100%; }
+.hvh { height: 100vh; }
+.hauto { height: auto; }
+
+//background
+.bg-primary { background-color: $color_primary; }
+.bg-white {background-color: white;}
+.bg-blue {background-color: $color_blue;}
+
+//color
+.color-primary {color: $color_primary;}
+.color-white { color: white; }
+.color-blue {color: $color_blue;}
+.color-grey {color: $color_grey;}
+
+//color style
+.txt-style-primary{
+  color: $color-grey;
+  font-size: $size_primary;
+}
+
+//border
+.border-circle{
+  border-radius: 50%;
+}
+
+//font-size
+
+$num: 10;
+@while $num > -1 {
+  .fs#{$num}  { font-size: #{$num}em; }
+  $num: $num - 1;
+}
+
+.fs-primary{ font-size: $size_primary;}
+
+//font decoration
+.lighter { font-weight: lighter; }
+.bold { font-weight: bold; }
+.bolder { font-weight: bolder; }
+
+//font-weight
+$num: 1000;
+@while $num > 0 {
+  .fweight#{$num}  { font-weight: #{$num}; }
+  $num: $num - 100;
+}
+
+//Vertical-align
+.valign-middle{
+  vertical-align: middle;
+}
+
+.valign-bottom{
+  vertical-align: bottom;
+}
+
+.vertical-center{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//text-transform
+.txt-upper{
+  text-transform: uppercase;
+}
+
+.txt-lower{
+  text-transform: lowercase;
+}
+
+.txt-capital{
+  text-transform: capitalize;
+}
+
+//text-align
+
+.txt-align-center{
+  text-align: center;
+}
+
+//flex
+
+.fl-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.fl-justify-between{
+	justify-content: space-between;
+}
+
+.fl-items-center{
+  align-items: center;
+}
+
+//No List style Item
+.noliststyle { list-style: none; padding-left: 0; }
